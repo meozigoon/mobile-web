@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ToyoTech Private</title>
+        <link rel="icon" href="/Logo Image/ToyoTech_Logo_forTab.png" />
+        <link rel="stylesheet" href="/private/private.css" />
+    </head>
+
+    <body style="display: none">
+        <header>
+            <img
+                src="/Logo Image/ToyoTech_Logo.png"
+                alt="ToyoTech Logo"
+                onclick="window.location.href='/'"
+                style="cursor: pointer"
+            />
+            <h1>Private</h1>
+            <span id="welcomeMessage"></span>
+            <button
+                onclick="window.open('https://toyotech.atlassian.net/jira/software/projects/TECH/boards/1', '_blank')"
+                style="
+                    padding: 8px 16px;
+                    background-color: #9b9bff;
+                    border: none;
+                    border-radius: 6px;
+                    color: white;
+                    cursor: pointer;
+                "
+            >
+                Jira
+            </button>
+            <button
+                onclick="window.open('https://www.notion.so/1ea31449296f80dda0add35a22ea6e9b?v=1ea31449296f80a68dfb000c585a4455', '_blank')"
+                style="
+                    padding: 8px 16px;
+                    background-color: #9b9bff;
+                    border: none;
+                    border-radius: 6px;
+                    color: white;
+                    cursor: pointer;
+                "
+            >
+                노션
+            </button>
+            <button
+                onclick="window.open('https://code.toyotech.dev/', '_blank')"
+                style="
+                    padding: 8px 16px;
+                    background-color: #9b9bff;
+                    border: none;
+                    border-radius: 6px;
+                    color: white;
+                    cursor: pointer;
+                "
+            >
+                코드서버
+            </button>
+            <button
+                onclick="Logout()"
+                style="
+                    padding: 8px 16px;
+                    background-color: #9b9bff;
+                    border: none;
+                    border-radius: 6px;
+                    color: white;
+                    cursor: pointer;
+                "
+            >
+                로그아웃
+            </button>
+        </header>
+
+        <main>
+            <section id="accountSection" class="hidden">
+                <h2>사이트 계정 정보</h2>
+                <div class="input-row">
+                    <input
+                        type="text"
+                        id="siteName"
+                        placeholder="사이트명"
+                        style="margin-bottom: 10px"
+                    />
+                    <input
+                        type="text"
+                        id="siteId"
+                        placeholder="아이디"
+                        style="margin-bottom: 10px"
+                    />
+                    <input type="text" id="sitePw" placeholder="비밀번호" />
+                    <button class="add-account-btn" onclick="AddAccount()">
+                        추가
+                    </button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>사이트</th>
+                            <th>아이디</th>
+                            <th>비밀번호</th>
+                            <th>작업</th>
+                        </tr>
+                    </thead>
+                    <tbody id="accountTableBody"></tbody>
+                </table>
+            </section>
+
+            <section id="todoSection" class="hidden">
+                <h2>Idea List</h2>
+                <input type="text" id="todoInput" placeholder="아이디어 입력" />
+                <button class="add-todo-btn" onclick="AddTodo()">추가</button>
+                <ul id="todoList"></ul>
+            </section>
+        </main>
+
+        <footer>&copy; 2025 ToyoTech. All rights reserved.</footer>
+
+        <script type="module" src="/private/private.js"></script>
+    </body>
+</html>

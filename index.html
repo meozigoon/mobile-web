@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Team ToyoTech</title>
+        <link rel="icon" href="/Logo Image/ToyoTech_Logo_forTab.png" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <img
+                src="/Logo Image/ToyoTech_Logo.png"
+                alt="ToyoTech Logo"
+                onclick="window.location.href='/'"
+                style="cursor: pointer"
+            />
+            <h1>Team ToyoTech</h1>
+            <button
+                onclick="window.location.href='/login/'"
+                style="
+                    padding: 8px 16px;
+                    background-color: #9b9bff;
+                    border: none;
+                    border-radius: 6px;
+                    color: white;
+                    cursor: pointer;
+                "
+            >
+                Private
+            </button>
+        </header>
+
+        <main>
+            <section>
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="member" data-name="cho">
+                        <img src="/Profile Image/YSC.png" alt="Member Photo" />
+                        <h3>조영식 Youngsik Cho</h3>
+                        <p>Lead Developer</p>
+                        <p>Embedded Engineer</p>
+                        <p>Firmware Engineer</p>
+                        <p>
+                            <a href="mailto:yscho@toyotech.dev"
+                                >yscho@toyotech.dev</a
+                            >
+                        </p>
+                    </div>
+                    <div class="member" data-name="lee">
+                        <img src="/Profile Image/DHL.jpg" alt="Member Photo" />
+                        <h3>이동하 Dongha Lee</h3>
+                        <p>Firmware Engineer</p>
+                        <p>Frontend Developer</p>
+                        <p>
+                            <a href="https://meozigoon.github.io/"
+                                >meozigoon.github.io</a
+                            >
+                        </p>
+                        <p>
+                            <a href="mailto:dhlee@toyotech.dev"
+                                >dhlee@toyotech.dev</a
+                            >
+                        </p>
+                    </div>
+                    <div class="member" data-name="park">
+                        <img src="/Profile Image/JHP.png" alt="Member Photo" />
+                        <h3>박준현 Junhyun Park</h3>
+                        <p>Software Developer</p>
+                        <p>Backend Developer</p>
+                        <p>
+                            <a href="mailto:jhpark@toyotech.dev"
+                                >jhpark@toyotech.dev</a
+                            >
+                        </p>
+                    </div>
+                    <div class="member" data-name="kim">
+                        <img src="/Profile Image/JWK.png" alt="Member Photo" />
+                        <h3>김주원 Juwon Kim</h3>
+                        <p>Firmware Engineer</p>
+                        <p>Electronics Technician</p>
+                        <p>
+                            <a href="mailto:jwkim@toyotech.dev"
+                                >jwkim@toyotech.dev</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Our Projects</h2>
+                <p>Projects with C#, PCB, Web communcation</p>
+                <div class="proj-list">
+                    <div
+                        class="member"
+                        onclick="window.open('https://github.com/Team-ToyoTech/W.I.S.H.-Kiosk');"
+                    >
+                        <h3>WI:SH Kiosk</h3>
+                        <p>Kiosk for elders</p>
+                    </div>
+                    <div
+                        class="member"
+                        onclick="window.open('https://skkoa.toyotech.dev/');"
+                    >
+                        <h3>SKKOA; LTW</h3>
+                        <p>
+                            Starter Kit with Korean Oriented Architecture;
+                            Language To Write
+                        </p>
+                    </div>
+                    <div class="member">
+                        <h3>ToyoPay System</h3>
+                        <p>using ESP32, Nextion display and Node.js</p>
+                    </div>
+                    <div class="member">
+                        <h3>Pet Cam</h3>
+                        <p>using ESP32 and OV5640</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Our Skills</h2>
+                <div class="team-grid">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front member">
+                                <img
+                                    src="https://skillicons.dev/icons?i=cs"
+                                    alt="C#"
+                                />
+                                <h3>C#</h3>
+                            </div>
+                            <div class="flip-card-back member">
+                                <h3>C#</h3>
+                                <p>.NET, Socket, AI projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front member">
+                                <img
+                                    src="https://skillicons.dev/icons?i=cpp"
+                                    alt="C/C++"
+                                />
+                                <h3>C/C++</h3>
+                            </div>
+                            <div class="flip-card-back member">
+                                <h3>C/C++</h3>
+                                <p>Embedded projects, Algorithms</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front member">
+                                <img
+                                    src="https://skillicons.dev/icons?i=python"
+                                    alt="Python"
+                                />
+                                <h3>Python</h3>
+                            </div>
+                            <div class="flip-card-back member">
+                                <h3>Python</h3>
+                                <p>AI development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front member">
+                                <img
+                                    src="https://skillicons.dev/icons?i=arduino"
+                                    alt="Arduino"
+                                />
+                                <h3>Arduino</h3>
+                            </div>
+                            <div class="flip-card-back member">
+                                <h3>Arduino</h3>
+                                <p>Embedded projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front member">
+                                <img
+                                    src="https://skillicons.dev/icons?i=html,css"
+                                    alt="HTML/CSS"
+                                />
+                                <h3>HTML/CSS</h3>
+                            </div>
+                            <div class="flip-card-back member">
+                                <h3>HTML/CSS</h3>
+                                <p>Frontend development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front member">
+                                <img
+                                    src="https://skillicons.dev/icons?i=nodejs"
+                                    alt="Node.js"
+                                />
+                                <h3>Node.js</h3>
+                            </div>
+                            <div class="flip-card-back member">
+                                <h3>Node.js</h3>
+                                <p>Backend development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Contact Us</h2>
+                <div class="contact-section">
+                    <div class="contact-list">
+                        <p>
+                            <a
+                                href="mailto:toyotech@toyotech.dev"
+                                style="
+                                    margin-right: 8px;
+                                    vertical-align: middle;
+                                "
+                                title="Email"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="#9b9bff"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    style="vertical-align: middle"
+                                >
+                                    <rect
+                                        x="2"
+                                        y="4"
+                                        width="20"
+                                        height="16"
+                                        rx="2"
+                                    />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </a>
+                            <a
+                                href="mailto:toyotech@toyotech.dev"
+                                style="color: #9b9bff; vertical-align: middle"
+                                >toyotech@toyotech.dev</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="https://github.com/Team-ToyoTech"
+                                target="_blank"
+                                style="
+                                    margin-right: 8px;
+                                    vertical-align: middle;
+                                "
+                                title="GitHub"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="#9b9bff"
+                                    style="vertical-align: middle"
+                                >
+                                    <path
+                                        d="M12 2C6.48 2 2 6.58 2 12.26c0 4.49 2.87 8.3 6.84 9.64.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://github.com/Team-ToyoTech"
+                                target="_blank"
+                                style="color: #9b9bff; vertical-align: middle"
+                                >Team ToyoTech</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="https://instagram.com/team_toyotech"
+                                target="_blank"
+                                style="
+                                    margin-right: 8px;
+                                    vertical-align: middle;
+                                "
+                                title="Instagram"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="#9b9bff"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    style="vertical-align: middle"
+                                >
+                                    <rect
+                                        x="2"
+                                        y="2"
+                                        width="20"
+                                        height="20"
+                                        rx="5"
+                                    />
+                                    <path
+                                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                                    />
+                                    <line
+                                        x1="17.5"
+                                        y1="6.5"
+                                        x2="17.5"
+                                        y2="6.5"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://instagram.com/team_toyotech"
+                                target="_blank"
+                                style="color: #9b9bff; vertical-align: middle"
+                                >@team_toyotech</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>&copy; 2025 ToyoTech. All rights reserved.</footer>
+
+        <div id="profileModal" class="modal">
+            <div class="modal-content">
+                <span
+                    class="close"
+                    onclick="document.getElementById('profileModal').style.display='none'"
+                    >&times;</span
+                >
+                <h2 id="profileTitle"></h2>
+                <p id="profileContent"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

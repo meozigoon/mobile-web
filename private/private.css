@@ -1,0 +1,177 @@
+/* 모바일 전용 스타일 (PC는 신경쓰지 않음) */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f20;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    background-color: #1a1a2e;
+    width: 100vw;
+    box-sizing: border-box;
+    position: static;
+}
+
+header img {
+    height: 60px;
+    margin-bottom: 6px;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    text-align: center;
+    position: static;
+    left: unset;
+    transform: unset;
+}
+
+header #welcomeMessage {
+    margin: 8px 0 0 0;
+    color: white;
+    font-size: 15px;
+}
+
+header button {
+    width: 60vw;
+    max-width: 200px;
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+main {
+    padding: 18px 8px 8px 8px;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+input[type="password"],
+input[type="text"] {
+    padding: 10px;
+    height: 25px;
+    width: 90vw;
+    max-width: 350px;
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    height: 38px;
+    width: 60vw;
+    max-width: 200px;
+    margin: 0 0 8px 0;
+    background-color: #9b9bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.add-todo-btn,
+.add-account-btn {
+    width: 60vw;
+    max-width: 200px;
+    margin-left: 0;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 14px 0;
+    background-color: #1a1a2e;
+    font-size: 13px;
+    color: #aaaaaa;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1f1f3b;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+li span {
+    width: 100%;
+}
+
+li button {
+    margin: 8px 0 0 0;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+th,
+td {
+    border: 1px solid #3a3a5a;
+    padding: 8px 2px;
+    text-align: center;
+    word-break: break-all;
+}
+
+th {
+    background-color: #2a2a4a;
+}
+
+.hidden {
+    display: none;
+}
+
+#passwordSection,
+#todoSection,
+#accountSection {
+    max-width: 100vw;
+    margin: auto;
+    margin-bottom: 24px;
+    width: 100vw;
+    box-sizing: border-box;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Login</title>
+        <link rel="icon" href="/Logo Image/ToyoTech_Logo_forTab.png" />
+        <link rel="stylesheet" href="/login/login.css" />
+    </head>
+    <body>
+        <header>
+            <img
+                src="/Logo Image/ToyoTech_Logo.png"
+                alt="ToyoTech Logo"
+                onclick="window.location.href='/'"
+                style="cursor: pointer"
+            />
+            <h1>ToyoTech Private</h1>
+        </header>
+
+        <main>
+            <h2>Login</h2>
+            <input
+                type="email"
+                id="emailInput"
+                placeholder="이메일 입력"
+            /><br /><br />
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="비밀번호 입력"
+            /><br /><br />
+            <button onclick="Login()">로그인</button>
+        </main>
+
+        <footer>&copy; 2025 ToyoTech. All rights reserved.</footer>
+
+        <script type="module" src="/login/login.js"></script>
+    </body>
+</html>
